@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Stack simulada para criar recursos básicos na AWS
+
+Resources:
+  MeuBucketS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: meu-bucket-simulacao-codegirls
+
+  MinhaInstanciaEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0c55b159cbfafe1f0  # AMI genérica (exemplo)
+      InstanceType: t2.micro
+
+  MeuGrupoSeguranca:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Acesso SSH para EC2
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
