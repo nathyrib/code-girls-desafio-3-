@@ -42,7 +42,7 @@ As anotações sobre o desafio, conceitos aprendidos e estrutura do template est
 
 ## 📁 Diagrama da Stack 
 
-[!Diagrama da stack](desafio3.png)
+![Diagrama da stack](desafio3.png)
 
 ---
 
